@@ -1,0 +1,42 @@
+@use 'base/variables' as v;
+
+
+/* UTILIDADES */
+.text-center{
+    text-align: center;
+}
+
+
+.bg-primario{
+    background-color: v.$primario;
+}
+
+
+.bg-white{
+    background-color: v.$blanco;
+}
+
+
+.margin-neg{
+    margin-top: -8rem;
+}
+
+.mt-3{
+    margin-top: 3rem;
+}
+
+.text-white{
+    color: v.$blanco;
+}
+
+.fs-1{
+    font-size: 1.3rem;
+}
+
+a{
+    color: v.$negro;
+}
+
+.padding-bottom-0{
+    padding-bottom: 0;
+}

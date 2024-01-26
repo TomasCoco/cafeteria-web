@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cafeteria SASS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bona+Nova&family=Raleway:wght@400;600&family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="build/css/app.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+   <header class="header header-menu">
+
+    <div class="contenedor contenido-header"> <!-- CONTENEDOR -->
+        
+        <div class="barra"> <!-- BARRA -->
+            
+            <div class="logo">
+                <img src="build/img/logo.svg" alt="logo cafeteria">
+            </div>
+
+            <nav class="nav-principal">
+                <a href="index.html">Inicio</a>
+                <a href="nosotros.html">Nosotros</a>
+                <a href="proceso.html">Proceso</a>
+                <a class="activo" href="menu.html">Menú</a>
+                <a href="galeria.html">Galería</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div> <!-- fin barra -->
+
+        <div class="title-header">
+            <h1>Disfruta de nuestro delicioso menú</h1>
+        </div>
+
+    </div> <!-- fin contenedor -->
+   </header>
+    
+    <!-- MAIN -->
+   <main class="contenedor contenido-main padding-bottom-0">
+
+    <h2><span>Utilizamos los</span> mejores ingredientes</h2>
+
+    <div class="contenido-menu">
+        <div class="texto">
+            <p>Nuestro joven equipo está altamente capacitado para preparar el mejor café y brindar una atención única para con nuestros clientes.</p>
+        </div>
+
+        <div class="imagen-menu">
+            <img src="src/img/cafe.jpg">
+        </div>
+    </div>
+
+   </main> <!-- -->
+
+
+     <!-- CARTA -->
+    <section class="nuestro-menu">
+
+        <h2 class="title-menu mt-3"><span>nuestro delicioso</span> menú</h2>
+    
+        <div class="contenedor grid-menu"> <!-- GRID -->
+            <div class="menu cafe"> <!-- 1. Café -->
+                <h3>Café</h3>
+    
+                <ul>
+                    <li>
+                        <p>Café Latte <span>Café Espresso con leche caliente evaporada</span> </p>
+                        <p class="precio">$25</p>
+                    </li>
+                    <li>
+                        <p>Café Mocha <span>Espresso con crema batida</span> </p>
+                        <p class="precio">$30</p>
+                    </li>
+                    <li>
+                        <p>Café Americano <span>Café Negro</span> </p>
+                        <p class="precio">$30</p>
+                    </li>
+                    <li>
+                        <p>Capuccino<span>Espresso con una capa suave de espuma</span> </p>
+                        <p class="precio">$25</p>
+                    </li>
+                    <li>
+                        <p>Café Mocha Frio<span>Espresso, dulce con mocha y leche.</span> </p>
+                        <p class="precio">$29</p>
+                    </li>
+                    <li>
+                        <p>Mocha Frio Quemado<span>Espresso, hielo, con azucar quemada y mantequilla.</span> </p>
+                        <p class="precio">$35</p>
+                    </li>
+                    <li>
+                        <p>Latte con Caramelo<span>Espresso, leche y caramelo.</span> </p>
+                        <p class="precio">$39</p>
+                    </li>
+                </ul>
+    
+            </div>
+    
+            <div class="menu comida"> <!-- 2. Comida -->
+                <h3>Comida</h3>
+    
+                <ul>
+                    <li>
+                        <p>Baguette de Pollo <span>Delicioso Baguette con pollo a la plancha</span> </p>
+                        <p class="precio">$45</p>
+                    </li>
+                    <li>
+                        <p>Baguette Pollo y Queso <span>Baguette combinado con Pollo y Queso Manchego</span> </p>
+                        <p class="precio">$50</p>
+                    </li>
+                    <li>
+                        <p>Baguette con Tocino<span>Baguette con especias y verduras, además de tocino</span> </p>
+                        <p class="precio">$50</p>
+                    </li>
+                    <li>
+                        <p>Baguette de Jamón<span>Delicioso Baguette con Jamón y Especias</span> </p>
+                        <p class="precio">$65</p>
+                    </li>
+                    <li>
+                        <p>Baguette con Jamón, Queso y Tocino<span>El especial de la casa</span> </p>
+                        <p class="precio">$69</p>
+                    </li>
+                    <li>
+                        <p>Sandwich de Pollo<span>Delicioso sandwich con Pollo y especies</span> </p>
+                        <p class="precio">$65</p>
+                    </li>
+                    <li>
+                        <p>Sandwich de Jamón y queso<span>Queso Amarillo con Jamón y Queso</span> </p>
+                        <p class="precio">$59</p>
+                    </li>
+                </ul>
+            </div>
+        </div> <!-- -->
+    
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+    <div class="footer-contenido contenedor"> <!-- CONTENEDOR FOOTER -->
+
+        <div class="footer-box ubicacion"> <!-- box 1 -->
+            <h3>Ubicacion</h3>
+            <p>Nicolas Copérnico 593, Venado Tuerto, Argentina</p>
+        </div>
+
+        <div class="footer-box reserva"> <!-- box 2 -->
+            <h3>Reserva</h3>
+            <p>WhatsApp +54 9 3462 523388</p>
+        </div>
+
+        <div class="footer-box horario">  <!-- box 3 -->          
+            <h3>Horario</h3>
+            <p>Lunes a Sábados de 8 a 19 hs.</p>
+            <p>Domingos de 9 a 19 hs.</p>
+        </div>
+
+    </div> <!-- -->
+    <p class="copyright"><a class="text-white fs-1" target="_blank" href="https://www.linkedin.com/in/tomascococcioni/">Desarrollado por Tomas Cococcioni 2022 ©</a></p>
+    </footer>
+
+
+</body>
+</html>

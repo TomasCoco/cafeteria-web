@@ -1,0 +1,202 @@
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+
+.header{
+    padding: 5rem 0;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @include m.telefono{
+        padding: 4rem 0;
+    }
+
+    @include m.tablet{
+        padding: 2rem 0;
+    }
+
+    @include m.desktop{
+        height: 60rem; // más alto para la versión desktop
+        padding: 2rem 0;
+    }
+}
+
+
+.header-nosotros{
+    background-image: url('/src/img/header_nosotros.jpg');
+   
+    &::before{
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 30%;
+    }
+
+    .contenido-header{
+        position: relative;
+
+        h1{ 
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 3rem;
+            @include m.tablet{
+                margin-top: 10rem;
+            }
+        }
+    }
+}
+
+
+.header-inicio{
+    background-image: url('/src/img/header_inicio.jpg');
+    
+    &::before{
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 50%;
+    }
+
+    .contenido-header{
+        position: relative;
+
+        h1{ 
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 3rem;
+            @include m.tablet{
+                margin-top: 10rem;
+            }
+        }
+    }
+
+   
+}
+
+
+.header-proceso{
+    background-image: url('/src/img/header_proceso.jpg');
+   
+    &::before{
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 30%;
+    }
+
+    .contenido-header{
+        position: relative;
+
+        h1{ 
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 3rem;
+            @include m.tablet{
+                margin-top: 10rem;
+            }
+        }
+    }
+}
+
+.header-menu{
+    background-image: url('/src/img/header_menu.jpg');
+    background-position: center;
+
+    &::before{
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 40%;
+    }
+
+    .contenido-header{
+        position: relative;
+
+        h1{ 
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 3rem;
+            @include m.tablet{
+                margin-top: 10rem;
+            }
+        }
+    }
+}
+
+.header-galeria{
+    background-image: url('/src/img/header_galeria.jpg');
+
+    &::before{
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 40%;
+    }
+
+    .contenido-header{
+        position: relative;
+
+        h1{ 
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 3rem;
+            @include m.tablet{
+                margin-top: 10rem;
+            }
+        }
+    }
+}
+
+.header-contacto{
+    background-image: url('/src/img/header_contacto.jpg');
+
+    &::before{
+        content: '';
+        background-color: v.$negro;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        opacity: 50%;
+    }
+
+    .contenido-header{
+        position: relative;
+
+        h1{ 
+            text-align: center;
+            color: v.$blanco;
+            text-transform: uppercase;
+            margin-top: 3rem;
+            @include m.tablet{
+                margin-top: 10rem;
+            }
+        }
+    }
+}

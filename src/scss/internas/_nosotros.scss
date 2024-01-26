@@ -1,0 +1,35 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-nosotros{
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 5rem;
+    }
+
+
+    .imagen{
+        margin-bottom: 5rem;
+        @include m.tablet{
+            margin-bottom: 0;
+        }
+
+            img{
+                transform: rotate(-6deg);
+                border: 3rem solid v.$blanco;
+                box-shadow: 10px 10px 5px -7px rgb( 0 0 0 / .35);
+        }
+
+    }
+
+
+    .texto{
+        blockquote{
+            margin: 0;
+            padding: 1rem;
+            border-left: .5rem solid v.$primario;
+            font-weight: 700;
+        }
+    }
+}

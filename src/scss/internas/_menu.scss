@@ -1,0 +1,32 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.contenido-principal{
+    background-color: v.$blanco;
+}
+
+.contenido-menu{
+
+    .texto{
+        margin: 0 auto;
+
+        p{
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        @include m.tablet{
+            p{
+                text-align: left;
+            }
+        }
+       
+    }
+  
+    @include m.tablet{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 3rem;
+    }
+   
+}

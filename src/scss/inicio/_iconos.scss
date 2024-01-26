@@ -1,0 +1,31 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+/* ICONOS */
+.iconos{
+    margin-top: 5rem; // esta es la sección
+
+    .listado-iconos{
+        @include m.tablet{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5rem;
+        }
+
+        li{
+            img{
+                margin: 0 auto;
+                width: 12rem;
+            }
+
+            p{
+                    font-family: v.$fuenteCursiva;
+                    font-size: 3rem;
+                    color: v.$primario;
+            }
+        }
+    }
+
+}
+
+  
